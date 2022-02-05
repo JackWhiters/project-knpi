@@ -1,0 +1,46 @@
+RewriteEngine on
+
+RewriteRule ^home$ index.php [L]
+
+RewriteRule ^create-data$ user_tambah.php [L]
+RewriteRule ^update-data$ user_ubah.php [L]
+RewriteRule ^detail-data$ user_rincian.php [L]
+RewriteRule ^view-data$ user_tampil.php [L]
+RewriteRule ^tag-data$ user_tandai.php [L]
+RewriteRule ^tag-data1$ user_tandai1.php [L]
+RewriteRule ^print-data$ cetak.php [L]
+RewriteRule ^print-data1$ cetak1.php [L]
+RewriteRule ^upload-data$ user_unggah.php [L]
+
+RewriteRule ^create-user$ user_tambahx.php [L]
+RewriteRule ^update-user$ user_ubahx.php [L]
+RewriteRule ^view-user$ user_tampilx.php [L]
+
+RewriteRule ^view-datacsv$ data_csv.php [L]
+RewriteRule ^update-datacsv$ data_unggahedit.php [L]
+
+RewriteRule ^view-provinsi$ provinsi.php [L]
+RewriteRule ^update-provinsi$ provinsi_ubah.php [L]
+RewriteRule ^view-kabupaten$ kabupaten.php [L]
+RewriteRule ^update-kabupaten$ kabupaten_ubah.php [L]
+RewriteRule ^view-kecamatan$ kecamatan.php [L]
+RewriteRule ^update-kecamatan$ kecamatan_ubah.php [L]
+RewriteRule ^view-kelurahan$ kelurahan.php [L]
+RewriteRule ^update-kelurahan$ kelurahan_ubah.php [L]
+
+RewriteRule ^print-kartanu$ cetak.php [L]
+RewriteRule ^download-data$ download.php [L]
+RewriteRule ^print-maarif$ cetak1.php [L]
+RewriteRule ^download-data$ download/data.php [L]
+
+RewriteRule ^update-identitas$ identitas_ubah.php [L]
+RewriteRule ^update-blangko$ blangko_ubah.php [L]
+RewriteRule ^update-blangko1$ blangko_ubah1.php [L]
+RewriteRule ^update-ttd$ tandatangan_ubah.php [L]
+RewriteRule ^update-ttd1$ tandatangan_ubah1.php [L]
+
+RewriteRule ^faq$ faq.php [L]
+
+RewriteRule ^logout$ logout.php [L]
+
+Options All -Indexes
